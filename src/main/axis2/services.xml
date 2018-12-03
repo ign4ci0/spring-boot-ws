@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.4.1  Built on : Aug 13, 2008 (05:03:35 LKT) -->
+<serviceGroup>
+    <service name="ConsultasWSService">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="com.ericsson.marcte.emulators.sidi.ws.SIDIReceiver"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">com.ericsson.marcte.emulators.sidi.ws.SIDIDispatcher</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="getDataByPhone_v20" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://localhost:3337/sidi-server/services/ConsultasWS">
+            <actionMapping>http://localhost:3337/sidi-server/services/ConsultasWS/ConsultasWS/getDataByPhone_v20Request</actionMapping>
+            <outputActionMapping>http://localhost:3337/sidi-server/services/ConsultasWS/ConsultasWS/getDataByPhone_v20Response</outputActionMapping>
+        </operation>
+        <operation name="getInformationByIP_v50" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://localhost:3337/sidi-server/services/ConsultasWS">
+            <actionMapping>http://localhost:3337/sidi-server/services/ConsultasWS/ConsultasWS/getInformationByIP_v50Request</actionMapping>
+            <outputActionMapping>http://localhost:3337/sidi-server/services/ConsultasWS/ConsultasWS/getInformationByIP_v50Response</outputActionMapping>
+        </operation>
+        <operation name="getInformationByPhone_v20" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://localhost:3337/sidi-server/services/ConsultasWS">
+            <actionMapping>http://localhost:3337/sidi-server/services/ConsultasWS/ConsultasWS/getInformationByPhone_v20Request</actionMapping>
+            <outputActionMapping>http://localhost:3337/sidi-server/services/ConsultasWS/ConsultasWS/getInformationByPhone_v20Response</outputActionMapping>
+        </operation>
+        <operation name="getInformationByICCR_v20" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://localhost:3337/sidi-server/services/ConsultasWS">
+            <actionMapping>http://localhost:3337/sidi-server/services/ConsultasWS/ConsultasWS/getInformationByICCR_v20Request</actionMapping>
+            <outputActionMapping>http://localhost:3337/sidi-server/services/ConsultasWS/ConsultasWS/getInformationByICCR_v20Response</outputActionMapping>
+        </operation>
+        <operation name="getInformationByIP_v20" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://localhost:3337/sidi-server/services/ConsultasWS">
+            <actionMapping>http://localhost:3337/sidi-server/services/ConsultasWS/ConsultasWS/getInformationByIP_v20Request</actionMapping>
+            <outputActionMapping>http://localhost:3337/sidi-server/services/ConsultasWS/ConsultasWS/getInformationByIP_v20Response</outputActionMapping>
+        </operation>
+        <operation name="getDataByPhone" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://localhost:3337/sidi-server/services/ConsultasWS">
+            <actionMapping>http://localhost:3337/sidi-server/services/ConsultasWS/ConsultasWS/getDataByPhoneRequest</actionMapping>
+            <outputActionMapping>http://localhost:3337/sidi-server/services/ConsultasWS/ConsultasWS/getDataByPhoneResponse</outputActionMapping>
+        </operation>
+        <operation name="getInformationErrorByPhone_v30" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://localhost:3337/sidi-server/services/ConsultasWS">
+            <actionMapping>http://localhost:3337/sidi-server/services/ConsultasWS/ConsultasWS/getInformationErrorByPhone_v30Request</actionMapping>
+            <outputActionMapping>http://localhost:3337/sidi-server/services/ConsultasWS/ConsultasWS/getInformationErrorByPhone_v30Response</outputActionMapping>
+        </operation>
+        <operation name="getDataByPhone_v40" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://localhost:3337/sidi-server/services/ConsultasWS">
+            <actionMapping>http://localhost:3337/sidi-server/services/ConsultasWS/ConsultasWS/getDataByPhone_v40Request</actionMapping>
+            <outputActionMapping>http://localhost:3337/sidi-server/services/ConsultasWS/ConsultasWS/getDataByPhone_v40Response</outputActionMapping>
+        </operation>
+        <operation name="getDataByICCR" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://localhost:3337/sidi-server/services/ConsultasWS">
+            <actionMapping>http://localhost:3337/sidi-server/services/ConsultasWS/ConsultasWS/getDataByICCRRequest</actionMapping>
+            <outputActionMapping>http://localhost:3337/sidi-server/services/ConsultasWS/ConsultasWS/getDataByICCRResponse</outputActionMapping>
+        </operation>
+        <operation name="getInformationByICCR" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://localhost:3337/sidi-server/services/ConsultasWS">
+            <actionMapping>http://localhost:3337/sidi-server/services/ConsultasWS/ConsultasWS/getInformationByICCRRequest</actionMapping>
+            <outputActionMapping>http://localhost:3337/sidi-server/services/ConsultasWS/ConsultasWS/getInformationByICCRResponse</outputActionMapping>
+        </operation>
+        <operation name="getInformationErrorByPhone_v20" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://localhost:3337/sidi-server/services/ConsultasWS">
+            <actionMapping>http://localhost:3337/sidi-server/services/ConsultasWS/ConsultasWS/getInformationErrorByPhone_v20Request</actionMapping>
+            <outputActionMapping>http://localhost:3337/sidi-server/services/ConsultasWS/ConsultasWS/getInformationErrorByPhone_v20Response</outputActionMapping>
+        </operation>
+        <operation name="getInformationByIP" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://localhost:3337/sidi-server/services/ConsultasWS">
+            <actionMapping>http://localhost:3337/sidi-server/services/ConsultasWS/ConsultasWS/getInformationByIPRequest</actionMapping>
+            <outputActionMapping>http://localhost:3337/sidi-server/services/ConsultasWS/ConsultasWS/getInformationByIPResponse</outputActionMapping>
+        </operation>
+        <operation name="getInformationErrorByIP_v20" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://localhost:3337/sidi-server/services/ConsultasWS">
+            <actionMapping>http://localhost:3337/sidi-server/services/ConsultasWS/ConsultasWS/getInformationErrorByIP_v20Request</actionMapping>
+            <outputActionMapping>http://localhost:3337/sidi-server/services/ConsultasWS/ConsultasWS/getInformationErrorByIP_v20Response</outputActionMapping>
+        </operation>
+        <operation name="getDataByICCR_v20" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://localhost:3337/sidi-server/services/ConsultasWS">
+            <actionMapping>http://localhost:3337/sidi-server/services/ConsultasWS/ConsultasWS/getDataByICCR_v20Request</actionMapping>
+            <outputActionMapping>http://localhost:3337/sidi-server/services/ConsultasWS/ConsultasWS/getDataByICCR_v20Response</outputActionMapping>
+        </operation>
+        <operation name="getInformationByPhone" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://localhost:3337/sidi-server/services/ConsultasWS">
+            <actionMapping>http://localhost:3337/sidi-server/services/ConsultasWS/ConsultasWS/getInformationByPhoneRequest</actionMapping>
+            <outputActionMapping>http://localhost:3337/sidi-server/services/ConsultasWS/ConsultasWS/getInformationByPhoneResponse</outputActionMapping>
+        </operation>
+        <operation name="getDataByPhone_v30" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://localhost:3337/sidi-server/services/ConsultasWS">
+            <actionMapping>http://localhost:3337/sidi-server/services/ConsultasWS/ConsultasWS/getDataByPhone_v30Request</actionMapping>
+            <outputActionMapping>http://localhost:3337/sidi-server/services/ConsultasWS/ConsultasWS/getDataByPhone_v30Response</outputActionMapping>
+        </operation>
+        <operation name="getInformationByICCR_v30" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://localhost:3337/sidi-server/services/ConsultasWS">
+            <actionMapping>http://localhost:3337/sidi-server/services/ConsultasWS/ConsultasWS/getInformationByICCR_v30Request</actionMapping>
+            <outputActionMapping>http://localhost:3337/sidi-server/services/ConsultasWS/ConsultasWS/getInformationByICCR_v30Response</outputActionMapping>
+        </operation>
+        <operation name="getDataByICCR_v30" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://localhost:3337/sidi-server/services/ConsultasWS">
+            <actionMapping>http://localhost:3337/sidi-server/services/ConsultasWS/ConsultasWS/getDataByICCR_v30Request</actionMapping>
+            <outputActionMapping>http://localhost:3337/sidi-server/services/ConsultasWS/ConsultasWS/getDataByICCR_v30Response</outputActionMapping>
+        </operation>
+        <operation name="getInformationErrorByICCR_v30" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://localhost:3337/sidi-server/services/ConsultasWS">
+            <actionMapping>http://localhost:3337/sidi-server/services/ConsultasWS/ConsultasWS/getInformationErrorByICCR_v30Request</actionMapping>
+            <outputActionMapping>http://localhost:3337/sidi-server/services/ConsultasWS/ConsultasWS/getInformationErrorByICCR_v30Response</outputActionMapping>
+        </operation>
+        <operation name="getInformationErrorByIP_v30" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://localhost:3337/sidi-server/services/ConsultasWS">
+            <actionMapping>http://localhost:3337/sidi-server/services/ConsultasWS/ConsultasWS/getInformationErrorByIP_v30Request</actionMapping>
+            <outputActionMapping>http://localhost:3337/sidi-server/services/ConsultasWS/ConsultasWS/getInformationErrorByIP_v30Response</outputActionMapping>
+        </operation>
+        <operation name="getInformationByIP_v40" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://localhost:3337/sidi-server/services/ConsultasWS">
+            <actionMapping>http://localhost:3337/sidi-server/services/ConsultasWS/ConsultasWS/getInformationByIP_v40Request</actionMapping>
+            <outputActionMapping>http://localhost:3337/sidi-server/services/ConsultasWS/ConsultasWS/getInformationByIP_v40Response</outputActionMapping>
+        </operation>
+        <operation name="getInformationErrorByICCR_v20" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://localhost:3337/sidi-server/services/ConsultasWS">
+            <actionMapping>http://localhost:3337/sidi-server/services/ConsultasWS/ConsultasWS/getInformationErrorByICCR_v20Request</actionMapping>
+            <outputActionMapping>http://localhost:3337/sidi-server/services/ConsultasWS/ConsultasWS/getInformationErrorByICCR_v20Response</outputActionMapping>
+        </operation>
+        <operation name="getInformationByPhone_v30" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://localhost:3337/sidi-server/services/ConsultasWS">
+            <actionMapping>http://localhost:3337/sidi-server/services/ConsultasWS/ConsultasWS/getInformationByPhone_v30Request</actionMapping>
+            <outputActionMapping>http://localhost:3337/sidi-server/services/ConsultasWS/ConsultasWS/getInformationByPhone_v30Response</outputActionMapping>
+        </operation>
+        <operation name="getInformationByIP_v30" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://localhost:3337/sidi-server/services/ConsultasWS">
+            <actionMapping>http://localhost:3337/sidi-server/services/ConsultasWS/ConsultasWS/getInformationByIP_v30Request</actionMapping>
+            <outputActionMapping>http://localhost:3337/sidi-server/services/ConsultasWS/ConsultasWS/getInformationByIP_v30Response</outputActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

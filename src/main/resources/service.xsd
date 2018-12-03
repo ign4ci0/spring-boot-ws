@@ -1,0 +1,36 @@
+<xs:schema
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        xmlns:tns="http://ign4ci0.com/spring/boot/web/service/model"
+        xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
+        targetNamespace="http://ign4ci0.com/spring/boot/web/service/model"
+        xmlns="http://www.w3.org/2001/XMLSchema"
+        elementFormDefault="qualified">
+    <xs:element name="getPhoneNumberByIpAddressRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="ipAddress" type="xs:string" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="getPhoneNumberByIpAddressResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="phoneNumber" type="xs:string" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="getIpAddressByPhoneRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="phoneNumber" type="xs:string" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="getIpAddressByPhoneResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="ipAddress" type="xs:string" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

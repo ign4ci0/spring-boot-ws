@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions
+  targetNamespace="sidi-server"
+  xmlns:apachesoap="http://xml.apache.org/xml-soap"
+  xmlns:impl="sidi-server"
+  xmlns:intf="sidi-server"
+  xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
+  xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+  xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:types>
+    <schema targetNamespace="sidi-server" xmlns="http://www.w3.org/2001/XMLSchema">
+      <import schemaLocation="encoding.xsd" namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+      <complexType name="ArrayOf_xsd_string">
+        <complexContent>
+          <restriction base="soapenc:Array">
+            <attribute ref="soapenc:arrayType" wsdl:arrayType="xsd:string[]" />
+          </restriction>
+        </complexContent>
+      </complexType>
+    </schema>
+  </wsdl:types>
+ <wsdl:message name="getInformationErrorByPhone_v30Response">
+   <wsdl:part name="getInformationErrorByPhone_v30Return" type="impl:ArrayOf_xsd_string"/>
+ </wsdl:message>
+ <wsdl:message name="getDataByPhone_v40Request">
+   <wsdl:part name="strPhone" type="xsd:string"/>
+ </wsdl:message>
+ <wsdl:message name="getInformationErrorByICCR_v20Response">
+   <wsdl:part name="getInformationErrorByICCR_v20Return" type="impl:ArrayOf_xsd_string"/>
+ </wsdl:message>
+ <wsdl:message name="getInformationByPhone_v20Response">
+   <wsdl:part name="getInformationByPhone_v20Return" type="impl:ArrayOf_xsd_string"/>
+ </wsdl:message>
+ <wsdl:message name="getInformationByPhone_v30Response">
+   <wsdl:part name="getInformationByPhone_v30Return" type="impl:ArrayOf_xsd_string"/>
+ </wsdl:message>
+ <wsdl:message name="getInformationByICCRRequest">
+   <wsdl:part name="strICCR" type="xsd:string"/>
+ </wsdl:message>
+ <wsdl:message name="getInformationErrorByICCR_v30Response">
+   <wsdl:part name="getInformationErrorByICCR_v30Return" type="impl:ArrayOf_xsd_string"/>
+ </wsdl:message>
+ <wsdl:message name="getInformationErrorByICCR_v20Request">
+   <wsdl:part name="strICCR" type="xsd:string"/>
+ </wsdl:message>
+ <wsdl:message name="getDataByPhone_v30Response">
+   <wsdl:part name="getDataByPhone_v30Return" type="impl:ArrayOf_xsd_string"/>
+ </wsdl:message>
+ <wsdl:message name="getDataByICCR_v30Request">
+   <wsdl:part name="strICCR" type="xsd:string"/>
+ </wsdl:message>
+ <wsdl:message name="getDataByPhone_v20Response">
+   <wsdl:part name="getDataByPhone_v20Return" type="impl:ArrayOf_xsd_string"/>
+ </wsdl:message>
+ <wsdl:message name="getInformationByPhoneResponse">
+   <wsdl:part name="getInformationByPhoneReturn" type="impl:ArrayOf_xsd_string"/>
+ </wsdl:message>
+ <wsdl:message name="getDataByICCRResponse">
+   <wsdl:part name="getDataByICCRReturn" type="impl:ArrayOf_xsd_string"/>
+ </wsdl:message>
+ <wsdl:message name="getInformationByIP_v20Request">
+   <wsdl:part name="strIP" type="xsd:string"/>
+ </wsdl:message>
+ <wsdl:message name="getInformationByICCR_v20Request">
+   <wsdl:part name="strICCR" type="xsd:string"/>
+ </wsdl:message>
+ <wsdl:message name="getInformationErrorByPhone_v30Request">
+   <wsdl:part name="strPhone" type="xsd:string"/>
+ </wsdl:message>
+ <wsdl:message name="getDataByPhoneRequest">
+   <wsdl:part name="strPhone" type="xsd:string"/>
+ </wsdl:message>
+ <wsdl:message name="getInformationErrorByPhone_v20Response">
+   <wsdl:part name="getInformationErrorByPhone_v20Return" type="impl:ArrayOf_xsd_string"/>
+ </wsdl:message>
+ <wsdl:message name="getInformationByIP_v40Response">
+   <wsdl:part name="getInformationByIP_v40Return" type="impl:ArrayOf_xsd_string"/>
+ </wsdl:message>
+ <wsdl:message name="getInformationByIP_v40Request">
+   <wsdl:part name="strIP" type="xsd:string"/>
+ </wsdl:message>
+ <wsdl:message name="getInformationByIP_v30Request">
+   <wsdl:part name="strIP" type="xsd:string"/>
+ </wsdl:message>
+ <wsdl:message name="getDataByICCRRequest">
+   <wsdl:part name="strICCR" type="xsd:string"/>
+ </wsdl:message>
+ <wsdl:message name="getInformationByIPResponse">
+   <wsdl:part name="getInformationByIPReturn" type="impl:ArrayOf_xsd_string"/>
+ </wsdl:message>
+ <wsdl:message name="getInformationErrorByICCR_v30Request">
+   <wsdl:part name="strICCR" type="xsd:string"/>
+ </wsdl:message>
+ <wsdl:message name="getInformationErrorByIP_v20Request">
+   <wsdl:part name="strIP" type="xsd:string"/>
+ </wsdl:message>
+ <wsdl:message name="getInformationByIP_v50Request">
+   <wsdl:part name="strIP" type="xsd:string"/>
+ </wsdl:message>
+ <wsdl:message name="getInformationByICCR_v30Response">
+   <wsdl:part name="getInformationByICCR_v30Return" type="impl:ArrayOf_xsd_string"/>
+ </wsdl:message>
+ <wsdl:message name="getInformationByICCR_v20Response">
+   <wsdl:part name="getInformationByICCR_v20Return" type="impl:ArrayOf_xsd_string"/>
+ </wsdl:message>
+ <wsdl:message name="getInformationErrorByIP_v20Response">
+   <wsdl:part name="getInformationErrorByIP_v20Return" type="impl:ArrayOf_xsd_string"/>
+ </wsdl:message>
+ <wsdl:message name="getInformationByPhone_v30Request">
+   <wsdl:part name="strPhone" type="xsd:string"/>
+ </wsdl:message>
+ <wsdl:message name="getDataByPhoneResponse">
+   <wsdl:part name="getDataByPhoneReturn" type="impl:ArrayOf_xsd_string"/>
+ </wsdl:message>
+ <wsdl:message name="getDataByPhone_v40Response">
+   <wsdl:part name="getDataByPhone_v40Return" type="impl:ArrayOf_xsd_string"/>
+ </wsdl:message>
+ <wsdl:message name="getDataByICCR_v30Response">
+   <wsdl:part name="getDataByICCR_v30Return" type="impl:ArrayOf_xsd_string"/>
+ </wsdl:message>
+ <wsdl:message name="getInformationByIP_v50Response">
+   <wsdl:part name="getInformationByIP_v50Return" type="impl:ArrayOf_xsd_string"/>
+ </wsdl:message>
+ <wsdl:message name="getInformationByPhone_v20Request">
+   <wsdl:part name="strPhone" type="xsd:string"/>
+ </wsdl:message>
+ <wsdl:message name="getInformationErrorByPhone_v20Request">
+   <wsdl:part name="strPhone" type="xsd:string"/>
+ </wsdl:message>
+ <wsdl:message name="getInformationByIP_v30Response">
+   <wsdl:part name="getInformationByIP_v30Return" type="impl:ArrayOf_xsd_string"/>
+ </wsdl:message>
+ <wsdl:message name="getInformationByIP_v20Response">
+   <wsdl:part name="getInformationByIP_v20Return" type="impl:ArrayOf_xsd_string"/>
+ </wsdl:message>
+ <wsdl:message name="getInformationByICCR_v30Request">
+   <wsdl:part name="strICCR" type="xsd:string"/>
+ </wsdl:message>
+ <wsdl:message name="getInformationErrorByIP_v30Response">
+   <wsdl:part name="getInformationErrorByIP_v30Return" type="impl:ArrayOf_xsd_string"/>
+ </wsdl:message>
+ <wsdl:message name="getDataByPhone_v30Request">
+   <wsdl:part name="strPhone" type="xsd:string"/>
+ </wsdl:message>
+ <wsdl:message name="getInformationByIPRequest">
+   <wsdl:part name="strIP" type="xsd:string"/>
+ </wsdl:message>
+ <wsdl:message name="getInformationByPhoneRequest">
+   <wsdl:part name="strPhone" type="xsd:string"/>
+ </wsdl:message>
+ <wsdl:message name="getInformationByICCRResponse">
+   <wsdl:part name="getInformationByICCRReturn" type="impl:ArrayOf_xsd_string"/>
+ </wsdl:message>
+ <wsdl:message name="getDataByICCR_v20Response">
+   <wsdl:part name="getDataByICCR_v20Return" type="impl:ArrayOf_xsd_string"/>
+ </wsdl:message>
+ <wsdl:message name="getDataByPhone_v20Request">
+   <wsdl:part name="strPhone" type="xsd:string"/>
+ </wsdl:message>
+ <wsdl:message name="getInformationErrorByIP_v30Request">
+   <wsdl:part name="strIP" type="xsd:string"/>
+ </wsdl:message>
+ <wsdl:message name="getDataByICCR_v20Request">
+   <wsdl:part name="strICCR" type="xsd:string"/>
+ </wsdl:message>
+ <wsdl:portType name="ConsultasWS">
+   <wsdl:operation name="getInformationByIP" parameterOrder="strIP">
+     <wsdl:input message="impl:getInformationByIPRequest" name="getInformationByIPRequest"/>
+     <wsdl:output message="impl:getInformationByIPResponse" name="getInformationByIPResponse"/>
+   </wsdl:operation>
+   <wsdl:operation name="getInformationByIP_v20" parameterOrder="strIP">
+     <wsdl:input message="impl:getInformationByIP_v20Request" name="getInformationByIP_v20Request"/>
+     <wsdl:output message="impl:getInformationByIP_v20Response" name="getInformationByIP_v20Response"/>
+   </wsdl:operation>
+   <wsdl:operation name="getInformationByIP_v30" parameterOrder="strIP">
+     <wsdl:input message="impl:getInformationByIP_v30Request" name="getInformationByIP_v30Request"/>
+     <wsdl:output message="impl:getInformationByIP_v30Response" name="getInformationByIP_v30Response"/>
+   </wsdl:operation>
+   <wsdl:operation name="getInformationByIP_v40" parameterOrder="strIP">
+     <wsdl:input message="impl:getInformationByIP_v40Request" name="getInformationByIP_v40Request"/>
+     <wsdl:output message="impl:getInformationByIP_v40Response" name="getInformationByIP_v40Response"/>
+   </wsdl:operation>
+   <wsdl:operation name="getInformationByIP_v50" parameterOrder="strIP">
+     <wsdl:input message="impl:getInformationByIP_v50Request" name="getInformationByIP_v50Request"/>
+     <wsdl:output message="impl:getInformationByIP_v50Response" name="getInformationByIP_v50Response"/>
+   </wsdl:operation>
+   <wsdl:operation name="getInformationByPhone" parameterOrder="strPhone">
+     <wsdl:input message="impl:getInformationByPhoneRequest" name="getInformationByPhoneRequest"/>
+     <wsdl:output message="impl:getInformationByPhoneResponse" name="getInformationByPhoneResponse"/>
+   </wsdl:operation>
+   <wsdl:operation name="getInformationByICCR" parameterOrder="strICCR">
+     <wsdl:input message="impl:getInformationByICCRRequest" name="getInformationByICCRRequest"/>
+     <wsdl:output message="impl:getInformationByICCRResponse" name="getInformationByICCRResponse"/>
+   </wsdl:operation>
+   <wsdl:operation name="getInformationByPhone_v20" parameterOrder="strPhone">
+     <wsdl:input message="impl:getInformationByPhone_v20Request" name="getInformationByPhone_v20Request"/>
+     <wsdl:output message="impl:getInformationByPhone_v20Response" name="getInformationByPhone_v20Response"/>
+   </wsdl:operation>
+   <wsdl:operation name="getInformationByICCR_v20" parameterOrder="strICCR">
+     <wsdl:input message="impl:getInformationByICCR_v20Request" name="getInformationByICCR_v20Request"/>
+     <wsdl:output message="impl:getInformationByICCR_v20Response" name="getInformationByICCR_v20Response"/>
+   </wsdl:operation>
+   <wsdl:operation name="getInformationByPhone_v30" parameterOrder="strPhone">
+     <wsdl:input message="impl:getInformationByPhone_v30Request" name="getInformationByPhone_v30Request"/>
+     <wsdl:output message="impl:getInformationByPhone_v30Response" name="getInformationByPhone_v30Response"/>
+   </wsdl:operation>
+   <wsdl:operation name="getInformationByICCR_v30" parameterOrder="strICCR">
+     <wsdl:input message="impl:getInformationByICCR_v30Request" name="getInformationByICCR_v30Request"/>
+     <wsdl:output message="impl:getInformationByICCR_v30Response" name="getInformationByICCR_v30Response"/>
+   </wsdl:operation>
+   <wsdl:operation name="getDataByPhone" parameterOrder="strPhone">
+     <wsdl:input message="impl:getDataByPhoneRequest" name="getDataByPhoneRequest"/>
+     <wsdl:output message="impl:getDataByPhoneResponse" name="getDataByPhoneResponse"/>
+   </wsdl:operation>
+   <wsdl:operation name="getDataByICCR" parameterOrder="strICCR">
+     <wsdl:input message="impl:getDataByICCRRequest" name="getDataByICCRRequest"/>
+     <wsdl:output message="impl:getDataByICCRResponse" name="getDataByICCRResponse"/>
+   </wsdl:operation>
+   <wsdl:operation name="getDataByPhone_v20" parameterOrder="strPhone">
+     <wsdl:input message="impl:getDataByPhone_v20Request" name="getDataByPhone_v20Request"/>
+     <wsdl:output message="impl:getDataByPhone_v20Response" name="getDataByPhone_v20Response"/>
+   </wsdl:operation>
+   <wsdl:operation name="getDataByICCR_v20" parameterOrder="strICCR">
+     <wsdl:input message="impl:getDataByICCR_v20Request" name="getDataByICCR_v20Request"/>
+     <wsdl:output message="impl:getDataByICCR_v20Response" name="getDataByICCR_v20Response"/>
+   </wsdl:operation>
+   <wsdl:operation name="getDataByPhone_v30" parameterOrder="strPhone">
+     <wsdl:input message="impl:getDataByPhone_v30Request" name="getDataByPhone_v30Request"/>
+     <wsdl:output message="impl:getDataByPhone_v30Response" name="getDataByPhone_v30Response"/>
+   </wsdl:operation>
+   <wsdl:operation name="getDataByPhone_v40" parameterOrder="strPhone">
+     <wsdl:input message="impl:getDataByPhone_v40Request" name="getDataByPhone_v40Request"/>
+     <wsdl:output message="impl:getDataByPhone_v40Response" name="getDataByPhone_v40Response"/>
+   </wsdl:operation>
+   <wsdl:operation name="getDataByICCR_v30" parameterOrder="strICCR">
+     <wsdl:input message="impl:getDataByICCR_v30Request" name="getDataByICCR_v30Request"/>
+     <wsdl:output message="impl:getDataByICCR_v30Response" name="getDataByICCR_v30Response"/>
+   </wsdl:operation>
+   <wsdl:operation name="getInformationErrorByIP_v20" parameterOrder="strIP">
+     <wsdl:input message="impl:getInformationErrorByIP_v20Request" name="getInformationErrorByIP_v20Request"/>
+     <wsdl:output message="impl:getInformationErrorByIP_v20Response" name="getInformationErrorByIP_v20Response"/>
+   </wsdl:operation>
+   <wsdl:operation name="getInformationErrorByIP_v30" parameterOrder="strIP">
+     <wsdl:input message="impl:getInformationErrorByIP_v30Request" name="getInformationErrorByIP_v30Request"/>
+     <wsdl:output message="impl:getInformationErrorByIP_v30Response" name="getInformationErrorByIP_v30Response"/>
+   </wsdl:operation>
+   <wsdl:operation name="getInformationErrorByPhone_v20" parameterOrder="strPhone">
+     <wsdl:input message="impl:getInformationErrorByPhone_v20Request" name="getInformationErrorByPhone_v20Request"/>
+     <wsdl:output message="impl:getInformationErrorByPhone_v20Response" name="getInformationErrorByPhone_v20Response"/>
+   </wsdl:operation>
+   <wsdl:operation name="getInformationErrorByICCR_v20" parameterOrder="strICCR">
+     <wsdl:input message="impl:getInformationErrorByICCR_v20Request" name="getInformationErrorByICCR_v20Request"/>
+     <wsdl:output message="impl:getInformationErrorByICCR_v20Response" name="getInformationErrorByICCR_v20Response"/>
+   </wsdl:operation>
+   <wsdl:operation name="getInformationErrorByPhone_v30" parameterOrder="strPhone">
+     <wsdl:input message="impl:getInformationErrorByPhone_v30Request" name="getInformationErrorByPhone_v30Request"/>
+     <wsdl:output message="impl:getInformationErrorByPhone_v30Response" name="getInformationErrorByPhone_v30Response"/>
+   </wsdl:operation>
+   <wsdl:operation name="getInformationErrorByICCR_v30" parameterOrder="strICCR">
+     <wsdl:input message="impl:getInformationErrorByICCR_v30Request" name="getInformationErrorByICCR_v30Request"/>
+     <wsdl:output message="impl:getInformationErrorByICCR_v30Response" name="getInformationErrorByICCR_v30Response"/>
+   </wsdl:operation>
+ </wsdl:portType>
+ <wsdl:binding name="ConsultasWSSoapBinding" type="impl:ConsultasWS">
+   <wsdlsoap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+   <wsdl:operation name="getInformationByIP">
+     <wsdlsoap:operation soapAction=""/>
+     <wsdl:input name="getInformationByIPRequest">
+       <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="sidi-server" use="encoded"/>
+     </wsdl:input>
+     <wsdl:output name="getInformationByIPResponse">
+       <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="sidi-server" use="encoded"/>
+     </wsdl:output>
+   </wsdl:operation>
+   <wsdl:operation name="getInformationByIP_v20">
+     <wsdlsoap:operation soapAction=""/>
+     <wsdl:input name="getInformationByIP_v20Request">
+       <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="sidi-server" use="encoded"/>
+     </wsdl:input>
+     <wsdl:output name="getInformationByIP_v20Response">
+       <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="sidi-server" use="encoded"/>
+     </wsdl:output>
+   </wsdl:operation>
+   <wsdl:operation name="getInformationByIP_v30">
+     <wsdlsoap:operation soapAction=""/>
+     <wsdl:input name="getInformationByIP_v30Request">
+       <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="sidi-server" use="encoded"/>
+     </wsdl:input>
+     <wsdl:output name="getInformationByIP_v30Response">
+      <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="sidi-server" use="encoded"/>
+     </wsdl:output>
+   </wsdl:operation>
+   <wsdl:operation name="getInformationByIP_v40">
+     <wsdlsoap:operation soapAction=""/>
+     <wsdl:input name="getInformationByIP_v40Request">
+       <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="sidi-server" use="encoded"/>
+     </wsdl:input>
+     <wsdl:output name="getInformationByIP_v40Response">
+       <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="sidi-server" use="encoded"/>
+     </wsdl:output>
+   </wsdl:operation>
+   <wsdl:operation name="getInformationByIP_v50">
+     <wsdlsoap:operation soapAction=""/>
+     <wsdl:input name="getInformationByIP_v50Request">
+       <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="sidi-server" use="encoded"/>
+     </wsdl:input>
+     <wsdl:output name="getInformationByIP_v50Response">
+       <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="sidi-server" use="encoded"/>
+     </wsdl:output>
+   </wsdl:operation>
+   <wsdl:operation name="getInformationByPhone">
+     <wsdlsoap:operation soapAction=""/>
+     <wsdl:input name="getInformationByPhoneRequest">
+       <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="sidi-server" use="encoded"/>
+     </wsdl:input>
+     <wsdl:output name="getInformationByPhoneResponse">
+       <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="sidi-server" use="encoded"/>
+     </wsdl:output>
+   </wsdl:operation>
+   <wsdl:operation name="getInformationByICCR">
+     <wsdlsoap:operation soapAction=""/>
+     <wsdl:input name="getInformationByICCRRequest">
+       <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="sidi-server" use="encoded"/>
+     </wsdl:input>
+     <wsdl:output name="getInformationByICCRResponse">
+       <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="sidi-server" use="encoded"/>
+     </wsdl:output>
+   </wsdl:operation>
+   <wsdl:operation name="getInformationByPhone_v20">
+     <wsdlsoap:operation soapAction=""/>
+     <wsdl:input name="getInformationByPhone_v20Request">
+       <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="sidi-server" use="encoded"/>
+     </wsdl:input>
+     <wsdl:output name="getInformationByPhone_v20Response">
+       <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="sidi-server" use="encoded"/>
+     </wsdl:output>
+   </wsdl:operation>
+   <wsdl:operation name="getInformationByICCR_v20">
+     <wsdlsoap:operation soapAction=""/>
+     <wsdl:input name="getInformationByICCR_v20Request">
+       <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="sidi-server" use="encoded"/>
+     </wsdl:input>
+     <wsdl:output name="getInformationByICCR_v20Response">
+       <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="sidi-server" use="encoded"/>
+     </wsdl:output>
+   </wsdl:operation>
+   <wsdl:operation name="getInformationByPhone_v30">
+     <wsdlsoap:operation soapAction=""/>
+     <wsdl:input name="getInformationByPhone_v30Request">
+       <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="sidi-server" use="encoded"/>
+     </wsdl:input>
+     <wsdl:output name="getInformationByPhone_v30Response">
+       <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="sidi-server" use="encoded"/>
+     </wsdl:output>
+   </wsdl:operation>
+   <wsdl:operation name="getInformationByICCR_v30">
+     <wsdlsoap:operation soapAction=""/>
+     <wsdl:input name="getInformationByICCR_v30Request">
+       <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="sidi-server" use="encoded"/>
+     </wsdl:input>
+     <wsdl:output name="getInformationByICCR_v30Response">
+       <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="sidi-server" use="encoded"/>
+     </wsdl:output>
+   </wsdl:operation>
+   <wsdl:operation name="getDataByPhone">
+     <wsdlsoap:operation soapAction=""/>
+     <wsdl:input name="getDataByPhoneRequest">
+       <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="sidi-server" use="encoded"/>
+     </wsdl:input>
+     <wsdl:output name="getDataByPhoneResponse">
+       <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="sidi-server" use="encoded"/>
+     </wsdl:output>
+   </wsdl:operation>
+   <wsdl:operation name="getDataByICCR">
+     <wsdlsoap:operation soapAction=""/>
+     <wsdl:input name="getDataByICCRRequest">
+       <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="sidi-server" use="encoded"/>
+     </wsdl:input>
+     <wsdl:output name="getDataByICCRResponse">
+       <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="sidi-server" use="encoded"/>
+     </wsdl:output>
+   </wsdl:operation>
+   <wsdl:operation name="getDataByPhone_v20">
+     <wsdlsoap:operation soapAction=""/>
+     <wsdl:input name="getDataByPhone_v20Request">
+       <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="sidi-server" use="encoded"/>
+     </wsdl:input>
+     <wsdl:output name="getDataByPhone_v20Response">
+       <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="sidi-server" use="encoded"/>
+     </wsdl:output>
+   </wsdl:operation>
+   <wsdl:operation name="getDataByICCR_v20">
+     <wsdlsoap:operation soapAction=""/>
+     <wsdl:input name="getDataByICCR_v20Request">
+       <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="sidi-server" use="encoded"/>
+     </wsdl:input>
+     <wsdl:output name="getDataByICCR_v20Response">
+       <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="sidi-server" use="encoded"/>
+     </wsdl:output>
+   </wsdl:operation>
+   <wsdl:operation name="getDataByPhone_v30">
+     <wsdlsoap:operation soapAction=""/>
+     <wsdl:input name="getDataByPhone_v30Request">
+       <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="sidi-server" use="encoded"/>
+     </wsdl:input>
+     <wsdl:output name="getDataByPhone_v30Response">
+       <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="sidi-server" use="encoded"/>
+     </wsdl:output>
+   </wsdl:operation>
+   <wsdl:operation name="getDataByPhone_v40">
+     <wsdlsoap:operation soapAction=""/>
+     <wsdl:input name="getDataByPhone_v40Request">
+       <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="sidi-server" use="encoded"/>
+     </wsdl:input>
+     <wsdl:output name="getDataByPhone_v40Response">
+       <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="sidi-server" use="encoded"/>
+     </wsdl:output>
+   </wsdl:operation>
+   <wsdl:operation name="getDataByICCR_v30">
+     <wsdlsoap:operation soapAction=""/>
+     <wsdl:input name="getDataByICCR_v30Request">
+       <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="sidi-server" use="encoded"/>
+     </wsdl:input>
+     <wsdl:output name="getDataByICCR_v30Response">
+       <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="sidi-server" use="encoded"/>
+     </wsdl:output>
+   </wsdl:operation>
+   <wsdl:operation name="getInformationErrorByIP_v20">
+     <wsdlsoap:operation soapAction=""/>
+     <wsdl:input name="getInformationErrorByIP_v20Request">
+       <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="sidi-server" use="encoded"/>
+     </wsdl:input>
+     <wsdl:output name="getInformationErrorByIP_v20Response">
+       <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="sidi-server" use="encoded"/>
+     </wsdl:output>
+   </wsdl:operation>
+   <wsdl:operation name="getInformationErrorByIP_v30">
+     <wsdlsoap:operation soapAction=""/>
+     <wsdl:input name="getInformationErrorByIP_v30Request">
+       <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="sidi-server" use="encoded"/>
+     </wsdl:input>
+     <wsdl:output name="getInformationErrorByIP_v30Response">
+       <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="sidi-server" use="encoded"/>
+     </wsdl:output>
+   </wsdl:operation>
+   <wsdl:operation name="getInformationErrorByPhone_v20">
+     <wsdlsoap:operation soapAction=""/>
+     <wsdl:input name="getInformationErrorByPhone_v20Request">
+       <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="sidi-server" use="encoded"/>
+     </wsdl:input>
+     <wsdl:output name="getInformationErrorByPhone_v20Response">
+       <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="sidi-server" use="encoded"/>
+     </wsdl:output>
+   </wsdl:operation>
+   <wsdl:operation name="getInformationErrorByICCR_v20">
+     <wsdlsoap:operation soapAction=""/>
+     <wsdl:input name="getInformationErrorByICCR_v20Request">
+       <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="sidi-server" use="encoded"/>
+     </wsdl:input>
+     <wsdl:output name="getInformationErrorByICCR_v20Response">
+       <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="sidi-server" use="encoded"/>
+     </wsdl:output>
+   </wsdl:operation>
+   <wsdl:operation name="getInformationErrorByPhone_v30">
+     <wsdlsoap:operation soapAction=""/>
+     <wsdl:input name="getInformationErrorByPhone_v30Request">
+       <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="sidi-server" use="encoded"/>
+     </wsdl:input>
+     <wsdl:output name="getInformationErrorByPhone_v30Response">
+       <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="sidi-server" use="encoded"/>
+     </wsdl:output>
+   </wsdl:operation>
+   <wsdl:operation name="getInformationErrorByICCR_v30">
+     <wsdlsoap:operation soapAction=""/>
+     <wsdl:input name="getInformationErrorByICCR_v30Request">
+       <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="sidi-server" use="encoded"/>
+     </wsdl:input>
+     <wsdl:output name="getInformationErrorByICCR_v30Response">
+       <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="sidi-server" use="encoded"/>
+     </wsdl:output>
+   </wsdl:operation>
+ </wsdl:binding>
+ <wsdl:service name="ConsultasWSService">
+   <wsdl:port binding="impl:ConsultasWSSoapBinding" name="ConsultasWS">
+     <wsdlsoap:address location="http://172.23.1.95:8080/sidi-server/services/ConsultasWS"/>
+   </wsdl:port>
+ </wsdl:service>
+</wsdl:definitions>
+
