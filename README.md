@@ -1,25 +1,14 @@
-As UGICOFR:
-mkdir /apps/COFR/sidi-emulator
-chown -R UGICOFR:COFR /apps/COFR/sidi-emulator/
-chmod -R 774 /apps/COFR/sidi-emulator/
 
-As root:
-firewall-cmd --zone=public --add-port=9909/tcp --permanent
- firewall-cmd --reload
-
-As USMCOFR:
-mkdir /apps/COFR/logs/sidi-emulator
-
-→ cat > sidi.properties 
+→ cat > ws.properties 
 server.port=9909
-server.contextPath=/sidi-server/services/ConsultasWS
-sidi.source=file
-sidi.file=sididata.properties
+server.contextPath=/ws/services/ConsultasWS
+ws.source=file
+ws.file=wsdata.properties
 
 
-→ cat > sididata.properties 
+→ cat > wsdata.properties 
 #Thu Nov 29 09:50:31 CET 2018
-1.1.173.2=948948602,1111948948602,1111948948602
-1.1.173.1=TEL_0000000,ADMIN_0000000,ICCR_0000000
+1.1.173.2=948948602
+1.1.173.1=948948601
 
-java -jar sidi-emulator-2.0.0-SNAPSHOT.jar --spring.config.location=file:sidi.properties >> /apps/COFR/logs/sidi-emulator/cofre.log &
+java -jar spring-boot-ws-1.0.0-SNAPSHOT.jar --spring.config.location=file:ws.properties &
